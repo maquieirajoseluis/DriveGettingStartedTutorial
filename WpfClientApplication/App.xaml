@@ -1,0 +1,13 @@
+﻿<Application x:Class="WpfClientApplication.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfClientApplication"
+             xmlns:Views="clr-namespace:WpfClientApplication.Views"
+        xmlns:ViewModels="clr-namespace:WpfClientApplication.ViewModels"
+             StartupUri="Views/MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type ViewModels:SignInViewModel}">
+            <Views:SignInView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
