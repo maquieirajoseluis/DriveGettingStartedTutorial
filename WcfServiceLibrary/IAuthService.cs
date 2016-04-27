@@ -1,4 +1,5 @@
 ﻿using System.ServiceModel;
+using System.Threading.Tasks;
 
 namespace WcfServiceLibrary
 {
@@ -7,6 +8,6 @@ namespace WcfServiceLibrary
     public interface IAuthService
     {
         [OperationContract]
-        void Authorize();
+        Task AuthorizeAsync();
     }
 }

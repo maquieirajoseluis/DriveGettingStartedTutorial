@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="42ca3589-3508-4c74-9bd6-b52568d6a25b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f7046313-83dc-4bee-8de6-549aeb6e2faa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,8 +22,8 @@
     <MetadataSource Address="net.pipe://localhost/WcfServiceLibrary/AuthService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="3c7b9574-eace-4ac1-8c32-bfd87e063518" SourceId="1" SourceUrl="net.pipe://localhost/WcfServiceLibrary/AuthService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="4be6a168-25cd-4f4e-b8d8-26e4dbfe6e8b" SourceId="1" SourceUrl="net.pipe://localhost/WcfServiceLibrary/AuthService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="07d4e2c1-7263-4b06-a803-348343839f9d" SourceId="1" SourceUrl="net.pipe://localhost/WcfServiceLibrary/AuthService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="8ac38503-9ab2-4c70-8b9f-8824e358208d" SourceId="1" SourceUrl="net.pipe://localhost/WcfServiceLibrary/AuthService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

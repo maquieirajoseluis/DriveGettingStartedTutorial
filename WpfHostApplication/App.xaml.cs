@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.ServiceModel;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using WcfServiceLibrary;
 
@@ -71,7 +72,7 @@ namespace WpfHostApplication
         private void CreateContextMenuStrip()
         {
             notifyIcon.ContextMenuStrip = new System.Windows.Forms.ContextMenuStrip();
-            notifyIcon.ContextMenuStrip.Items.Add("Sign In").Click += (s, e) => ShowSignInView();
+            notifyIcon.ContextMenuStrip.Items.Add("Sign In").Click += async (s, e) => await ShowSignInView();
             notifyIcon.ContextMenuStrip.Items.Add("Exit").Click += (s, e) => ExitApplication();
         }
 
@@ -83,9 +84,9 @@ namespace WpfHostApplication
             notifyIcon = null;
         }
 
-        private void ShowSignInView()
+        private async Task ShowSignInView()
         {
-            authService.Authorize();
+            await authService.AuthorizeAsync();
         }
 
         protected override void OnExit(ExitEventArgs e)

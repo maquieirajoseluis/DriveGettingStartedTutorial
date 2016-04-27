@@ -10,7 +10,7 @@ namespace WpfClientApplication.ViewModels
 
         public SignInViewModel()
         {
-            SignInCommand = new ActionCommand(() => new AuthServiceClient().Authorize(), () => true);
+            SignInCommand = new ActionCommand(async () => await new AuthServiceClient().AuthorizeAsync(), () => true);
         }
 
         /// <summary>
